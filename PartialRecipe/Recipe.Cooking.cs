@@ -2,9 +2,10 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace PartialRecipe
+public partial class Recipe
 {
-    internal class Recipe
+    public void Addingredient(string ingredient)
     {
+        if
     }
 }

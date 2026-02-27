@@ -20,5 +20,5 @@ Console.WriteLine();
 Console.WriteLine("=== 메서드 체이닝 ===");
 Money money4 = new Money(100, 50)
     .Add(50, 30)
-    .Substract(20, 30);
+    .Substract(30, 30);
 Console.WriteLine($"결과: {money4}");
