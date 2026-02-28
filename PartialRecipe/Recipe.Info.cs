@@ -5,19 +5,22 @@ using System.Text;
 
 public partial class Recipe
 {
-    private string[] ingredient;
+    private string[] Ingredient;
     private int IngredientCount;
+    private int MaxCount;
     public string Name { get; private set; }
     public int Servings { get; private set; }
-    public Recipe(string name, int servings, int ingredientCount)
+    public Recipe(string name, int servings, int Count)
     {
         Name = name;
         Servings = servings;
-        IngredientCount = ingredientCount;
+        IngredientCount = 0;
+        MaxCount = Count;
+        Ingredient = new string[Count];
     }
     public string this[int index]
     {
-        get { return ingredient[index];}
-        set { ingredient[index] = value; }
+        get { return Ingredient[index];}
+        set { Ingredient[index] = value; }
     }
 }
